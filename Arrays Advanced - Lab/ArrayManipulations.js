@@ -15,15 +15,15 @@ function arrayManipulator(input) {
                 arr.push(number);
                 break;
             case 'Remove':
-                index = arr.indexOf(number);
-                arr.slice(index);
+                arr = arr.filter(x => x !== number);
                 break;
             case 'RemoveAt':
-                arr.slice(number);
+                index = number;
+                arr.splice(index, 1);
                 break;
             case 'Insert':
                 index = commands[2];
-                arr.slice(index, 0, number);
+                arr.splice(index, 0, number);
                 break;
 
             default:
