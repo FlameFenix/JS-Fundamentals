@@ -13,8 +13,10 @@ function MaxNumber(array) {
             elements += `${firstElement} `;
         }
     }
-
     console.log(elements);
 }
 
 MaxNumber([14, 24, 3, 19, 15, 17]);
+
+let date = new Date("10-11-2009");
+console.log();
