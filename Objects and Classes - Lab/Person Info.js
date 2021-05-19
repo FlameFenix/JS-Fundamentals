@@ -1,10 +1,11 @@
-function personInfo(input) {
-    const obj = {};
-    obj.firstName = input[0];
-    obj.lastName = input[1];
-    obj.age = input[2];
-    return obj;
+function personInfo(firstname, lastname, age) {
+    const person = {};
+    person.firstName = firstname;
+    person.lastName = lastname;
+    person.age = age;
+    return person;   
 }
+
 personInfo("Peter", 
 "Pan",
 "20" );
